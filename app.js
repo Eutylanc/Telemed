@@ -6,15 +6,8 @@ const mysql = require('mysql2');
 const bcrypt = require('bcryptjs');
 const cookieParser = require('cookie-parser');
 const flash = require('express-flash');
-// const Sequelize = require('sequelize');
+const Sequelize = require('sequelize');
 
-// Database connection
-const pool = mysql.createPool({
-    host: 'localhost',
-    user: 'root',
-    password: '32939389Euty!',
-    database: 'telemedicine'
-});
 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
