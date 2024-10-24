@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="/public/css/settings.css">
+</head>
+<body>
+    <nav class="dashboard-nav">
+        <ul class="nav-links">
+            <li><a href="/public/dashboard.html">Dashboard</a></li>
+                <li><a href="/public/appointments.html">Appointments</a></li>
+                <li><a href="/public/patients.html">Patients</a></li>
+                <li><a href="/public/doctors.html">Doctors</a></li>
+                <li><a href="/public/consultations.html">Consultations</a></li>
+                <li><a href="/public/messages.html">Messages</a></li>
+                <li><a href="/public/settings.html">Settings</a></li>
+        </ul>
+    </nav>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <h1>Settings</h1>
+            </header>
+
+            <div class="settings-container">
+                <!-- Profile Settings -->
+                <section class="settings-section">
+                    <h2>Profile Settings</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" value="Dr. John Doe">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" value="johndoe@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" id="phone" name="phone" value="+123 456 7890">
+                        </div>
+
+                        <button type="submit" class="save-btn">Save Changes</button>
+                    </form>
+                </section>
+
+                <!-- Privacy Settings -->
+                <section class="settings-section">
+                    <h2>Privacy Settings</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="showEmail">Show Email to Others</label>
+                            <input type="checkbox" id="showEmail" name="showEmail" checked>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="twoFactorAuth">Enable Two-Factor Authentication</label>
+                            <input type="checkbox" id="twoFactorAuth" name="twoFactorAuth">
+                        </div>
+
+                        <button type="submit" class="save-btn">Save Changes</button>
+                    </form>
+                </section>
+
+                <!-- Notification Settings -->
+                <section class="settings-section">
+                    <h2>Notification Settings</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="emailNotifications">Email Notifications</label>
+                            <input type="checkbox" id="emailNotifications" name="emailNotifications" checked>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="smsNotifications">SMS Notifications</label>
+                            <input type="checkbox" id="smsNotifications" name="smsNotifications">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pushNotifications">Push Notifications</label>
+                            <input type="checkbox" id="pushNotifications" name="pushNotifications" checked>
+                        </div>
+
+                        <button type="submit" class="save-btn">Save Changes</button>
+                    </form>
+                </section>
+
+                <!-- Account Settings -->
+                <section class="settings-section">
+                    <h2>Account Settings</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="password">Change Password</label>
+                            <input type="password" id="password" name="password" placeholder="Enter new password">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="deleteAccount">Delete Account</label>
+                            <button type="button" class="delete-account-btn">Delete Account</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

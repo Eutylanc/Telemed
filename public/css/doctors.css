@@ -1,0 +1,114 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  color: #4CAF50;
+  margin: 20px 0;
+}
+
+/* Navigation */
+.dashboard-nav {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.nav-links {
+  list-style-type: none;
+  text-align: center;
+}
+
+.nav-links li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 15px;
+}
+
+.nav-links a:hover {
+  background-color: #4CAF50;
+  border-radius: 4px;
+}
+
+/* Table Styling */
+#doctorTable {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#doctorTable thead {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#doctorTable th, #doctorTable td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+#doctorTable tbody tr:hover {
+  background-color: #f2f2f2;
+}
+
+#doctorTable th {
+  font-weight: bold;
+}
+
+/* Action Button Styling */
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  border-radius: 4px;
+}
+
+button.edit {
+  background-color: #4CAF50;
+}
+
+button.delete {
+  background-color: #f44336;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #doctorTable {
+      width: 100%;
+  }
+
+  .nav-links {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .nav-links li {
+      display: block;
+      margin-bottom: 10px;
+  }
+}

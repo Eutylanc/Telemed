@@ -1,0 +1,128 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+  font-size: 28px;
+}
+
+/* Horizontal Rule Style */
+hr {
+  width: 80%;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+}
+
+/* Table Styles */
+#appointmentTable {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+#appointmentTable thead {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#appointmentTable th, #appointmentTable td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+#appointmentTable tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+#appointmentTable tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+#appointmentTable th {
+  font-weight: bold;
+}
+
+/* Action Button Styles */
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  border-radius: 4px;
+}
+
+button.edit {
+  background-color: #4CAF50;
+}
+
+button.cancel {
+  background-color: #f44336;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+/* Navigation Bar */
+.dashboard-nav {
+  background-color: #333;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+.nav-links {
+  list-style-type: none;
+  text-align: center;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 15px;
+}
+
+.nav-links a:hover {
+  background-color: #4CAF50;
+  border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #appointmentTable {
+      width: 100%;
+  }
+
+  .nav-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .nav-links li {
+      margin-bottom: 10px;
+  }
+}

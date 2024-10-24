@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telemedicine Dashboard</title>
+    <link rel="stylesheet" href="/public/css/dashboard.css">
+</head>
+<body>
+    <nav class="dashboard-nav">
+        <ul class="nav-links">
+            <li><a href="/public/dashboard.html">Dashboard</a></li>
+                <li><a href="/public/appointments.html">Appointments</a></li>
+                <li><a href="/public/patients.html">Patients</a></li>
+                <li><a href="/public/doctors.html">Doctors</a></li>
+                <li><a href="/public/consultations.html">Consultations</a></li>
+                <li><a href="/public/messages.html">Messages</a></li>
+                <li><a href="/public/settings.html">Settings</a></li>
+                <li><a href="/public/login.html">LogIn</a></li> 
+                <li><a href="/public/register.html">Register</a></li> 
+        </ul>
+       
+    </nav>
+
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header -->
+            <header class="dashboard-header">
+                <h1>Welcome, Dr. John</h1>
+                <div class="user-info">
+                    <span class="notification-bell">🔔</span>
+                    <img src="/public/images/doc 2.jpg" alt="Profile Picture" class="profile-pic">
+                </div>
+            </header>
+
+            <!-- Dashboard Overview -->
+            <section class="overview">
+                <div class="overview-card">
+                    <h3>Upcoming Appointments</h3>
+                    <p>3 Appointments Today</p>
+                    <button>View All</button>
+                </div>
+                <div class="overview-card">
+                    <h3>Messages</h3>
+                    <p>5 Unread Messages</p>
+                    <button>View All</button>
+                </div>
+                <div class="overview-card">
+                    <h3>Consultations</h3>
+                    <p>2 Ongoing Consultations</p>
+                    <button>Join Now</button>
+                </div>
+                <div class="overview-card">
+                    <h3>Patients</h3>
+                    <p>20 Active Patients</p>
+                    <button>View Records</button>
+                </div>
+            </section>
+
+            <!-- Recent Appointments -->
+            <section class="appointments-section">
+                <h2>Recent Appointments</h2>
+                <table class="appointments-table">
+                    <thead>
+                        <tr>
+                            <th>Patient</th>
+                            <th>Time</th>
+                            <th>Type</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jane Doe</td>
+                            <td>10:00 AM</td>
+                            <td>Video Consultation</td>
+                            <td>Pending</td>
+                            <td><button>Join</button></td>
+                        </tr>
+                        <tr>
+                            <td>John Smith</td>
+                            <td>11:30 AM</td>
+                            <td>In-Person</td>
+                            <td>Confirmed</td>
+                            <td><button>Details</button></td>
+                        </tr>
+                        <!-- More rows as needed -->
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+    <script src="/public/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages</title>
+    <link rel="stylesheet" href="/public/css/messages.css">
+</head>
+<body>
+    <div class="messages-page">
+        <nav class="dashboard-nav">
+            <ul class="nav-links">
+            <li><a href="/public/dashboard.html">Dashboard</a></li>
+                <li><a href="/public/appointments.html">Appointments</a></li>
+                <li><a href="/public/patients.html">Patients</a></li>
+                <li><a href="/public/consultations.html">Consultations</a></li>
+                <li><a href="/public/messages.html">Messages</a></li>
+                <li><a href="/public/settings.html">Settings</a></li>
+        </ul>
+    </nav>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <h1>Messages</h1>
+            </header>
+
+            <div class="messages-container">
+                <!-- Sidebar for Contact List -->
+                <aside class="contacts-sidebar">
+                    <h2>Contacts</h2>
+                    <ul class="contact-list">
+                        <li class="contact-item active">
+                            <img src="/public/images/Doc 1.jpg" alt="Patient 1" class="contact-avatar">
+                            <div class="contact-info">
+                                <p>Jane Doe</p>
+                                <span>Last message: Hey, Doctor...</span>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <img src="avatar2.png" alt="Patient 2" class="contact-avatar">
+                            <div class="contact-info">
+                                <p>Michael Harris</p>
+                                <span>Last message: Thank you...</span>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <img src="avatar3.png" alt="Patient 3" class="contact-avatar">
+                            <div class="contact-info">
+                                <p>Lucy Stevens</p>
+                                <span>Last message: I need to...</span>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <img src="avatar4.png" alt="Patient 4" class="contact-avatar">
+                            <div class="contact-info">
+                                <p>James Thompson</p>
+                                <span>Last message: Can we reschedule...</span>
+                            </div>
+                        </li>
+                    </ul>
+                </aside>
+
+                <!-- Chat Area -->
+                <div class="chat-area">
+                    <div class="chat-header">
+                        <img src="avatar1.png" alt="Patient 1" class="chat-avatar">
+                        <h3>Jane Doe</h3>
+                    </div>
+
+                    <div class="chat-messages">
+                        <div class="message received">
+                            <div class="message-avatar">
+                                <img src="avatar1.png" alt="Patient 1">
+                            </div>
+                            <div class="message-content">
+                                <p>Hey Doctor, I wanted to ask about my recent diagnosis...</p>
+                                <span class="message-time">10:00 AM</span>
+                            </div>
+                        </div>
+
+                        <div class="message sent">
+                            <div class="message-avatar">
+                                <img src="doctor-avatar.png" alt="Doctor">
+                            </div>
+                            <div class="message-content">
+                                <p>Hi Jane, I reviewed your results, and it looks like everything is under control.</p>
+                                <span class="message-time">10:05 AM</span>
+                            </div>
+                        </div>
+
+                        <div class="message received">
+                            <div class="message-avatar">
+                                <img src="avatar1.png" alt="Patient 1">
+                            </div>
+                            <div class="message-content">
+                                <p>Thanks so much, Doctor! I'll schedule a follow-up next month.</p>
+                                <span class="message-time">10:10 AM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="message-input">
+                        <input type="text" placeholder="Type a message..." class="message-textbox">
+                        <button class="send-message-btn">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

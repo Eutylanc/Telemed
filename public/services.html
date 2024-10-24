@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | TeleMed</title>
+    <link rel="stylesheet" href="/public/css/index.css">
+</head>
+<body>
+    <header>
+        <img src="/public/images/Logo.jpeg" alt="TeleMed Logo" class="logo">
+        <h1>Our Services</h1>
+        <!-- Hamburger Menu (three strokes) visible on all pages -->
+        <div class="hamburger-menu" onclick="toggleSidebar()">
+            &#9776;
+        </div>
+    </header>
+
+    <!-- Sidebar for Navigation -->
+    <aside class="sidebar" id="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="specialities.html">Specialities</a>
+        <a href="health-library.html">Health Library</a>
+        <a href="contact.html">Contact</a>
+    </aside>
+
+    </header>
+<script>
+    function toggleSidebar() {
+        var sidebar = document.getElementById("sidebar");
+        if (sidebar.style.width === "250px") {
+            sidebar.style.width = "0";
+        } else {
+            sidebar.style.width = "250px";
+        }
+    }
+</script>
+
+    <main>
+        <section class="services-section">
+            <h2>What We Offer</h2>
+            <div class="service-card">
+                <h3>Video Consultations</h3>
+                <p>Consult with doctors from the comfort of your home via secure video calls.</p>
+            </div>
+            <div class="service-card">
+                <h3>Prescription Management</h3>
+                <p>Get your prescriptions managed and refilled easily with our online platform.</p>
+            </div>
+            <div class="service-card">
+                <h3>Specialist Referrals</h3>
+                <p>Access specialists in various fields through our referral system.</p>
+            </div>
+        </section>
+    </main>
+
+     <!-- Footer -->
+     <footer>
+        <div class="footer-container">
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <p>&copy; 2024 Telemedicine Platform. All rights reserved.</p>
+            <p>Contact us: info@telemed.com | +254725333835</p>
+        </div>
+    </footer>
+</body>
+</html>

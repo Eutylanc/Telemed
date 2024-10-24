@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+</head>
+<body>
+  <h1>Admin Dashboard</h1>
+
+  <h2>Doctors</h2>
+  <ul>
+    <% doctors.forEach(doctor => { %>
+      <li>
+        <a href="/admin/doctors/<%= doctor.id %>">
+          <%= doctor.firstName %> <%= doctor.lastName %>
+        </a>
+      </li>
+    <% }) %>
+  </ul>
+
+  <h2>Appointments</h2>
+  <ul>
+    <% appointments.forEach(appointment => { %>
+      <li>
+        <a href="/admin/appointments/<%= appointment.id %>">
+          <%= appointment.patient.firstName %> <%= appointment.patient.lastName %>
+          with <%= appointment.doctor.firstName %> <%= appointment.doctor.lastName %>
+          on <%= appointment.appointmentDate %> at <%= appointment.appointmentTime %>
+        </a>
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>

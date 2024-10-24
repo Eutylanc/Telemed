@@ -1,0 +1,123 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+  font-size: 28px;
+}
+
+/* Navigation Bar */
+.dashboard-nav {
+  background-color: #333;
+  padding: 15px 0;
+  margin-bottom: 20px;
+}
+
+.nav-links {
+  list-style-type: none;
+  text-align: center;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 15px;
+}
+
+.nav-links a:hover {
+  background-color: #4CAF50;
+  border-radius: 4px;
+}
+
+/* Table Styles */
+#patientTable {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#patientTable thead {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#patientTable th, #patientTable td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+#patientTable tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+#patientTable tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+#patientTable th {
+  font-weight: bold;
+}
+
+/* Action Button Styles */
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+button.edit {
+  background-color: #4CAF50;
+}
+
+button.delete {
+  background-color: #f44336;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #patientTable {
+      width: 100%;
+  }
+
+  .nav-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .nav-links li {
+      margin-bottom: 10px;
+  }
+}
